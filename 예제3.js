@@ -8,7 +8,7 @@ let corr = 0;
 function quiz(){
     if(cnt%3==0 && corr>0) return;
     if(cnt>0 && cnt%3==0 && corr==0) console.log('---- 재시험입니다. ----');
-    let index = Math.floor(Math.random()*10)+1;
+    let index = Math.floor(Math.random()*10);
     let input = Number(prompt(q[index]));
     if(a[index]==input){
         corr++;
